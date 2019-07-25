@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html onmouseout="">
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="ico/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<meta name="viewport" content="width=device-width" />
+	<title>Offline Page</title>
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>	
+
+	<!-- Start Popup Contact Form -->
+	<button type="button" id="popupContactFormOpener" class="popupContactFormOpener animated fadeIn" title="Contact Us">
+		<span class="icon animated delay-2s heartBeat">
+			<i class="fas fa-envelope"></i>
+		</span>
+		<span class="text">Contact Us</span>
+	</button>
+	<div class="popupContact-form animated fadeIn" id="popupContactForm">
+		<div class="contents">
+			<div class="header">
+				<h2>You have a questions?</h2>
+				<h3>Send us a message</h3>
+			</div>
+			<div class="content">
+				<form action="#" method="POST" id="contactForm">
+					<div class="input-group animated delay-1s fadeInLeftBig">
+						<input type="text" placeholder="Your Full Name...." id="fullName">
+					</div>
+					<div class="input-group animated delay-1s fadeInRightBig">
+						<input type="text" placeholder="Your Subject...." id="subject">
+					</div>
+					<div class="input-group animated delay-2s fadeInUpBig">
+						<textarea rows="7" placeholder="Your Message Goes Here...." id="body"></textarea>
+					</div>
+					<div class="input-group">
+						<div class="form-buttons">
+							<button type="button" class="form-button cancel animated delay-3s bounceInRight" id="dismiss">
+								<span class="icon animated delay-4s heartBeat">
+									<i class="fas fa-window-close"></i>
+								</span>
+								<span class="text">Cancel</span>
+							</button>	
+							<button type="submit" class="form-button send animated delay-3s bounceInLeft">
+								<span class="icon animated delay-4s heartBeat">
+									<i class="fas fa-paper-plane"></i>
+								</span>
+								<span class="text">Send</span>
+							</button>	
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="footer">
+				<p>Your privacy is important to us, we also won't use your email for spam.</p>
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Contact Form -->
+
+	<!--Javascript-->
+	<script type="text/javascript" src="js/main.js"></script>
+	<!--Javascript-->
+</body>
+</html>

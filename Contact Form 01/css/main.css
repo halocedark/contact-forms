@@ -1,0 +1,276 @@
+/*Start Fonts*/
+/* Roboto thin */
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto-Thin.eot");
+    src: url("../font/Roboto-Thin.eot?#iefix") format('embedded-opentype'),
+         url("../font/Roboto-Thin.woff2") format('woff2'),
+         url("../font/Roboto-Thin.woff") format('woff'),
+         url("../font/Roboto-Thin.ttf") format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+/* Roboto light */
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto-Light.eot");
+    src: url("../font/Roboto-Light.eot?#iefix") format('embedded-opentype'),
+         url("../font/Roboto-Light.woff2") format('woff2'),
+         url("../font/Roboto-Light.woff") format('woff'),
+         url("../font/Roboto-Light.ttf") format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+/* Roboto medium */
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto-Medium.eot");
+    src: url("../font/Roboto-Medium.eot?#iefix") format('embedded-opentype'),
+         url("../font/Roboto-Medium.woff2") format('woff2'),
+         url("../font/Roboto-Medium.woff") format('woff'),
+         url("../font/Roboto-Medium.ttf") format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+/* Roboto regular */
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto-Regular.eot");
+    src: url("../font/Roboto-Regular.eot?#iefix") format('embedded-opentype'),
+         url("../font/Roboto-Regular.woff2") format('woff2'),
+         url("../font/Roboto-Regular.woff") format('woff'),
+         url("../font/Roboto-Regular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+/* Roboto bold */
+@font-face {
+    font-family: "Roboto";
+    src: url('../font/Roboto-Bold.eot');
+    src: url('../font/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../font/Roboto-Bold.woff2') format('woff2'),
+         url('../font/Roboto-Bold.woff') format('woff'),
+         url('../font/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+/*End Fonts*/
+/*Start Colors*/
+:root
+{
+	--main-color: #47d147;
+}
+/*End Colors*/
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background: url('../img/bg.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+}
+.overlay
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.9);
+	z-index: 999;
+}
+/*Start Popup Contact Form*/
+.popupContact-form
+{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	width: 350px;
+	background: #F6FAFB;
+	-webkit-box-shadow: 0 0 1rem #cccccc;
+	        box-shadow: 0 0 1rem #cccccc;
+	border-radius: 4px;
+	overflow: hidden;
+	display: none;
+}
+.popupContact-form .contents .header
+{
+	text-align: center;
+	color: #f2f2f2;
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	background: #664EA8;
+	padding: 1rem;
+}
+.popupContact-form .contents .header h2
+{
+	font-weight: 700;
+	font-size: 1.5rem;
+	margin-bottom: .5rem;
+}
+.popupContact-form .contents .header h3
+{
+	font-weight: 200;
+	font-size: 1.1rem;
+	letter-spacing: 1px;
+}
+.popupContact-form .contents .content
+{
+	padding: 1rem 0;
+	width: 300px;
+	margin: 0 auto;
+}
+.popupContact-form .contents .content .input-group
+{
+	display: block;
+	width: 100%;
+	margin-bottom: .6rem;
+	padding: 0;
+	overflow: hidden;
+}
+.popupContact-form .contents .content .input-group:last-child
+{
+	margin-bottom: 0;
+}
+.popupContact-form .contents .content input, textarea
+{
+	display: block;
+	width: 100%;
+	padding: .35rem .5rem;
+	outline: 0;
+	border: none;
+	border-left: 5px solid #7862b7;
+	background: #E0E0E0;
+	color: #404040;
+}
+.popupContact-form .contents .content input::-webkit-input-placeholder, textarea::-webkit-input-placeholder
+{
+	font-size: .7rem;
+	-webkit-transition: font-size .3s ease-in-out;
+	-o-transition: font-size .3s ease-in-out;
+	transition: font-size .3s ease-in-out;
+}
+.popupContact-form .contents .content input:-ms-input-placeholder, textarea:-ms-input-placeholder
+{
+	font-size: .7rem;
+	-webkit-transition: font-size .3s ease-in-out;
+	-o-transition: font-size .3s ease-in-out;
+	transition: font-size .3s ease-in-out;
+}
+.popupContact-form .contents .content input::-ms-input-placeholder, textarea::-ms-input-placeholder
+{
+	font-size: .7rem;
+	-webkit-transition: font-size .3s ease-in-out;
+	-o-transition: font-size .3s ease-in-out;
+	transition: font-size .3s ease-in-out;
+}
+.popupContact-form .contents .content input::placeholder, textarea::placeholder
+{
+	font-size: .7rem;
+	-webkit-transition: font-size .3s ease-in-out;
+	-o-transition: font-size .3s ease-in-out;
+	transition: font-size .3s ease-in-out;
+}
+.popupContact-form .contents .content input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder
+{
+	font-size: 0;
+}
+.popupContact-form .contents .content input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder
+{
+	font-size: 0;
+}
+.popupContact-form .contents .content input:focus::-ms-input-placeholder, textarea:focus::-ms-input-placeholder
+{
+	font-size: 0;
+}
+.popupContact-form .contents .content input:focus::placeholder, textarea:focus::placeholder
+{
+	font-size: 0;
+}
+.popupContact-form .contents .content .form-buttons
+{
+	overflow: hidden;
+}
+.popupContact-form .contents .content .form-buttons .form-button
+{
+	display: inline-block;
+	padding: .35rem 1.5rem .35rem .5rem;
+	border: none;
+	border-radius: 2px;
+	outline: 0;
+	background: #664EA8;
+	color: #f2f2f2;
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	font-weight: 200;
+	cursor: pointer;
+	-webkit-transition: background .2s ease-in-out;
+	-o-transition: background .2s ease-in-out;
+	transition: background .2s ease-in-out;
+}
+.popupContact-form .contents .content .form-buttons .form-button:hover
+{
+	background: #7862b7;
+}
+.popupContact-form .contents .content .form-buttons .form-button .icon
+{
+	display: inline-block;
+	margin-right: .3rem;
+	width: 25px;
+}
+.popupContact-form .contents .content .form-buttons .send
+{
+	float: right;
+}
+.popupContact-form .contents .content .form-buttons .cancel
+{
+	float: left;
+}
+.popupContact-form .contents .footer
+{
+	text-align: center;
+	color: #f2f2f2;
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	font-weight: 300;
+	font-size: .9rem;
+	background: #664EA8;
+	padding: 1rem;
+}
+.popupContactFormOpener
+{
+	display: inline-block;
+	padding: .35rem 1.5rem .35rem .5rem;
+	border: none;
+	border-radius: 2px;
+	outline: 0;
+	background: #664EA8;
+	color: #f2f2f2;
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	font-weight: 200;
+	cursor: pointer;
+	position: fixed;
+	top: 50%;
+	right: -3.25rem;
+	-webkit-transform: translate(0, -50%) rotate(-90deg);
+	    -ms-transform: translate(0, -50%) rotate(-90deg);
+	        transform: translate(0, -50%) rotate(-90deg);
+	-webkit-transition: background .2s ease-in-out;
+	-o-transition: background .2s ease-in-out;
+	transition: background .2s ease-in-out;
+}
+.popupContactFormOpener:hover
+{
+	background: #6950af;
+}
+.popupContactFormOpener .icon
+{
+	display: inline-block;
+	margin-right: .3rem;
+	width: 25px;
+}
+/*End Popup Contact Form*/
